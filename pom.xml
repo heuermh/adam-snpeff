@@ -31,7 +31,7 @@
   </parent>
   <groupId>com.github.heuermh.adamsnpeff</groupId>
   <artifactId>adam-snpeff_2.10</artifactId>
-  <version>0.20.1-SNAPSHOT</version>
+  <version>0.21.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>adam-snpeff_2.10</name>
@@ -58,10 +58,10 @@
     </developer>
   </developers>
   <properties>
-    <adam.version>0.20.0</adam.version>
+    <adam.version>0.21.0</adam.version>
     <scala.version>2.10.5</scala.version>
     <scala.artifact.suffix>2.10</scala.artifact.suffix>
-    <spark.version>2.0.0</spark.version>
+    <spark.version>2.1.0</spark.version>
     <utils.version>0.2.8</utils.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.build.targetEncoding>UTF-8</project.build.targetEncoding>

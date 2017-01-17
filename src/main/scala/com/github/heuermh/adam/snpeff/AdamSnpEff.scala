@@ -26,7 +26,7 @@ package com.github.heuermh.adam.snpeff
 import org.apache.spark.{ SparkConf, SparkContext }
 import org.bdgenomics.adam.models.VariantContext
 import org.bdgenomics.adam.rdd.ADAMContext._
-import org.bdgenomics.adam.rdd.variation.{ VariantContextRDD, VCFInFormatter, VCFOutFormatter }
+import org.bdgenomics.adam.rdd.variant.{ VariantContextRDD, VCFInFormatter, VCFOutFormatter }
 
 /**
  * SnpEff on Spark via ADAM pipe APIs.
@@ -50,7 +50,7 @@ object AdamSnpEff {
     val input: VariantContextRDD = sc.loadVcf(args(0))
 
     implicit val tFormatter = VCFInFormatter
-    implicit val uFormatter = new VCFOutFormatter
+    implicit val uFormatter = new VCFOutFormatter(input.headerLines)
 
     val snpEffCommand = "snpEff -download GRCh38.82"
     val output: VariantContextRDD = input.pipe[VariantContext, VariantContextRDD, VCFInFormatter](snpEffCommand)
