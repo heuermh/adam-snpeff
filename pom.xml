@@ -58,7 +58,7 @@
     </developer>
   </developers>
   <properties>
-    <adam.version>0.21.0</adam.version>
+    <adam.version>0.21.1-SNAPSHOT</adam.version>
     <scala.version>2.10.5</scala.version>
     <scala.artifact.suffix>2.10</scala.artifact.suffix>
     <spark.version>2.1.0</spark.version>

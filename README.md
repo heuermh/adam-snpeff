@@ -1,6 +1,8 @@
 # adam-snpeff
 
-###Hacking adam-snpeff
+*Note: This repository has been deprecated in favor of https://github.com/heuermh/cannoli.*
+
+### Hacking adam-snpeff
 
 Install
 
@@ -12,7 +14,7 @@ To build
 
     $ mvn install
 
-###Running adam-snpeff using `spark-submit`
+### Running adam-snpeff using `spark-submit`
 
 ```bash
 $ spark-submit \
